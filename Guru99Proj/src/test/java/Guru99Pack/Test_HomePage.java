@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class Test_HomePage extends SupertestNG {
 	CommonFeaturesClass_TestCases objCommon;
-	
+	//Comments has been added
 	@Test (priority = 1)
 	public void test_HomePage_VerifyWelcomeText(){
 		objHomePage= new HomePage(driver);
