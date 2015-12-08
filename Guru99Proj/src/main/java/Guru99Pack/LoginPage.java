@@ -18,12 +18,20 @@ public class LoginPage {
        this.driver = driver;
    }
    
-   //Set user name in textbox
+ //login method
+   public void loginToGuru99(String strUserName,String strPasword){
+	   
+       this.setUserName(strUserName); //Fill user name
+       this.setPassword(strPasword); //Fill password
+       this.clickLogin(); //Click Login button
+   }
+   
+   //Set user name in textbooks
    public void setUserName(String strUserName){
    	driver.findElement(loginName).sendKeys(strUserName);
    }
    
-   //Set password in password textbox
+   //Set password in password textbooks
    public void setPassword(String strPassword){
    	driver.findElement(loginPassword).sendKeys(strPassword);
    }
@@ -38,12 +46,6 @@ public class LoginPage {
     return    driver.findElement(titleText).getText();
    }
    
-   //login method
-   public void loginToGuru99(String strUserName,String strPasword){
-	   
-       this.setUserName(strUserName); //Fill user name
-       this.setPassword(strPasword); //Fill password
-       this.clickLogin(); //Click Login button
-   }
+   
 
 }
