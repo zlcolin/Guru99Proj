@@ -7,12 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import java.io.FileInputStream;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
+
 
 
 
@@ -31,8 +26,9 @@ public class SupertestNG {
 		driver.get("http://demo.guru99.com/V4/");
 		Reporter.log("Application is loaded", true);
 		
-
-		objexcelsheet= new Excelclass();
+		String FilePath="C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls";
+		String Sheetname="Sheet1";
+		objexcelsheet= new Excelclass(FilePath,Sheetname);
 		String cel1= objexcelsheet.getRowID(1,0);
 		String cel2= objexcelsheet.getRowPass(1,1);
 		
