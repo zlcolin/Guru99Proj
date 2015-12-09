@@ -19,17 +19,6 @@ public class CommonFeaturesClass_TestCases {
 		this.driver = driver;
 	}
 	
-	// Methods
-	/*public void test_click_managerLink(){
-		objBaseClass = new BaseClass(driver);
-		objBaseClass.clickManagerLink(driver);
-		String HomePageTitle = driver.getTitle();
-		Assert.assertTrue(HomePageTitle.toLowerCase().contains("Guru99 Bank Manager HomePage"));
-		Reporter.log("User is navigated tohome Page successfully", true);
-		driver.navigate().back();
-		//String HomePageTitle = objHomePage.getLoginTitle();
-	} // end of test
-*/	
 	public void test_click_newCustomerLink(){
 		objBaseClass = new BaseClass(driver);
 		objBaseClass.clickNewCustomerLink(driver);

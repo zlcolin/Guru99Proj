@@ -20,17 +20,8 @@ public class Test_HomePage extends SupertestNG {
 	}
 	
 	@Test (priority = 2)
-	public void test_HomePage_VerifyManagersID(){
-		objHomePage= new HomePage(driver);
-		System.out.println("3rd test case");
-		String ManagerIDtxt = objHomePage.getManagerIDText();
-		Assert.assertTrue(ManagerIDtxt.contains("Manger Id : mngr23707"));
-		Reporter.log("Manager's ID is:"+ManagerIDtxt, true);
-	}
-	
-	@Test (priority = 3)
 	public void test_ClickingsidebarMenu(){
-		System.out.println("4th test case");
+		System.out.println("3rd test case");
 		objCommon =new CommonFeaturesClass_TestCases(driver);
 		objLoginPage=new LoginPage(driver);
 		

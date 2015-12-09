@@ -26,9 +26,8 @@ public class SupertestNG {
 		driver.get("http://demo.guru99.com/V4/");
 		Reporter.log("Application is loaded", true);
 		
-		String FilePath="C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls";
-		String Sheetname="Sheet1";
-		objexcelsheet= new Excelclass(FilePath,Sheetname);
+
+		objexcelsheet= new Excelclass("C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls","Sheet1");
 		String cel1= objexcelsheet.getRowID(1,0);
 		String cel2= objexcelsheet.getRowPass(1,1);
 		
