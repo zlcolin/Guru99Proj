@@ -2,6 +2,7 @@ package Guru99Pack;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Reporter;
 
 public class LoginPage {
 	WebDriver driver;
@@ -14,33 +15,18 @@ public class LoginPage {
    
    //constructor
    public LoginPage(WebDriver driver){
-	   
-       this.driver = driver;
-   }
+	   this.driver = driver;
+       }
    
  //login method
    public void loginToGuru99(String strUserName,String strPasword){
-	   
-       this.setUserName(strUserName); //Fill user name
-       this.setPassword(strPasword); //Fill password
-       this.clickLogin(); //Click Login button
-   }
+	   driver.findElement(loginName).sendKeys(strUserName);
+	   driver.findElement(loginPassword).sendKeys(strPasword);
+	   driver.findElement(loginbtn).click();
+	   Reporter.log("User is logged in successfully",true);
+      }
    
-   //Set user name in textbooks
-   public void setUserName(String strUserName){
-   	driver.findElement(loginName).sendKeys(strUserName);
-   }
-   
-   //Set password in password textbooks
-   public void setPassword(String strPassword){
-   	driver.findElement(loginPassword).sendKeys(strPassword);
-   }
-   
-   //Click on login button
-   public void clickLogin(){
-   	driver.findElement(loginbtn).click();
-   }
-   
+     
    //Get the title of Login Page   
    public String getLoginTitle(){
     return    driver.findElement(titleText).getText();

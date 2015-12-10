@@ -3,7 +3,7 @@ package Guru99Pack;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class HomePage extends BaseClass {
+public class HomePage extends BaseandCommanFeature {
 	//Elements:-
 		WebDriver driver;	 
 	    By homePageWelcomeText = By.xpath("//marquee");
@@ -11,28 +11,17 @@ public class HomePage extends BaseClass {
 	 
 	    //Methods and constructor:-
 	    
-	    //Parameterized constructor initializing the driver
-	    public HomePage(WebDriver driver){
+	        public HomePage(WebDriver driver){
 	    	super(driver);
 	        this.driver = driver;
 	    }
 	 
-	    //Get the User name from Home Page
+	    //Get the Welcome text from Home Page
 			public String getHomePageDashboardWelcomeText() {			
 				String msg = driver.findElement(homePageWelcomeText).getText();
-				System.out.println(msg);
 				return msg;
 			}
-			
+}	
 		
-			//Get the User name from Home Page
-			public String getManagerIDText() {			
-				String mngrIDtxt = driver.findElement(homePageManagerIDText).getText();
-				System.out.println(mngrIDtxt);
-				return mngrIDtxt;
-			}
-	        
-	     //clicking on the sidebar links
-
-}
+			
 

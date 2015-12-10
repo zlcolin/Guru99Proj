@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 //added new comment
 //This class will consists of all the common features from all other classes/pages
-public class BaseClass {
+public class BaseandCommanFeature {
 	WebDriver driver;
 	
 	//locating web elements
@@ -29,7 +29,7 @@ public class BaseClass {
 	By homeLink=By.xpath("//a[text()='Home']");
 	
 	//Constructor
-		public BaseClass(WebDriver driver){
+		public BaseandCommanFeature(WebDriver driver){
 			this.driver = driver;
 		}
 		

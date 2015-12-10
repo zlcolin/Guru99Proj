@@ -21,8 +21,7 @@ public class Test_LoginPage extends SupertestNG {
 		System.out.println("password is:" + cel2);
 		objLoginPage=new LoginPage(driver);
 		objLoginPage.loginToGuru99(cel1,cel2);
-		Reporter.log("User is logged in successfully", true);
-		
+			
 		String LoginPageTitle = objLoginPage.getLoginTitle();
 		Assert.assertTrue(LoginPageTitle.toLowerCase().contains("guru99 bank"));
 		Reporter.log("Title of login page is:"+LoginPageTitle.toLowerCase(), true);
