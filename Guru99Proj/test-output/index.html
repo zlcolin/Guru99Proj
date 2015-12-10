@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Documents and Settings\Pooja T\Local Settings\Temp\testng-eclipse-143677937\testng-customsuite.xml</span>
+                    <span>C:\Documents and Settings\Pooja T\Local Settings\Temp\testng-eclipse--181469925\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +101,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Guru99Pack.Test_LoginPage" hash-for-method="test_LoginPage_VerifyLogin">test_LoginPage_VerifyLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Guru99Pack.Test_HomePage" hash-for-method="test_ClickingsidebarMenu">test_ClickingsidebarMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Guru99Pack.Test_HomePage" hash-for-method="test_HomePage_VerifyWelcomeText">test_HomePage_VerifyWelcomeText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -119,14 +124,21 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Guru99Pack.Test_LoginPage</span>
+              <span class="class-name">Guru99Pack.Test_HomePage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test_LoginPage_VerifyLogin">
-                  </a> <!-- test_LoginPage_VerifyLogin -->
-                  <span class="method-name">test_LoginPage_VerifyLogin</span>
+                  <a name="test_ClickingsidebarMenu">
+                  </a> <!-- test_ClickingsidebarMenu -->
+                  <span class="method-name">test_ClickingsidebarMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_HomePage_VerifyWelcomeText">
+                  </a> <!-- test_HomePage_VerifyWelcomeText -->
+                  <span class="method-name">test_HomePage_VerifyWelcomeText</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -134,7 +146,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Documents and Settings\Pooja T\Local Settings\Temp\testng-eclipse-143677937\testng-customsuite.xml</span>
+            <span class="header-content">C:\Documents and Settings\Pooja T\Local Settings\Temp\testng-eclipse--181469925\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -143,7 +155,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Guru99Pack.Test_LoginPage&quot;/&gt;
+      &lt;class name=&quot;Guru99Pack.Test_HomePage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -183,16 +195,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test_LoginPage_VerifyLogin')
-data.setCell(0, 2, 'Guru99Pack.Test_LoginPage')
-data.setCell(0, 3, 984);
+data.setCell(0, 1, 'test_ClickingsidebarMenu')
+data.setCell(0, 2, 'Guru99Pack.Test_HomePage')
+data.setCell(0, 3, 22078);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_HomePage_VerifyWelcomeText')
+data.setCell(1, 2, 'Guru99Pack.Test_HomePage')
+data.setCell(1, 3, 2766);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 984 ms</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -204,10 +220,29 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">test_LoginPage_VerifyLogin</span>
+              <span class="reporter-method-name">test_ClickingsidebarMenu</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Title of login page is:guru99 bank</span>
-                <span class="reporter-method-output">User is logged in successfully and the login page is also verified</span>
+                <span class="reporter-method-output">User is logged in successfully</span>
+                <span class="reporter-method-output">User is navigated to New Customer Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Edit Customer Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Delete Customer Page successfully</span>
+                <span class="reporter-method-output">User is navigated to New Account Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Edit Account Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Delete Account Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Deposit Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Withdrawal Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Fund Transfer Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Change password Page successfully</span>
+                <span class="reporter-method-output">User is navigated Balance Enqiry Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Mini Statement Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Customised Statement Page successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test_HomePage_VerifyWelcomeText</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">User is logged in successfully</span>
+                <span class="reporter-method-output">Welcome text is:Welcome To Manager's Page of Guru99 Bank</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -225,18 +260,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Guru99Pack.Test_LoginPage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Guru99Pack.Test_HomePage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">precondition</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">test_LoginPage_VerifyLogin</span>
-                <span class="method-start">27719 ms</span>
+                <span class="method-name">test_HomePage_VerifyWelcomeText</span>
+                <span class="method-start">17813 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postcondition</span>
-                <span class="method-start">28719 ms</span>
+                <span class="method-start">20594 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">precondition</span>
+                <span class="method-start">21094 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_ClickingsidebarMenu</span>
+                <span class="method-start">37469 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postcondition</span>
+                <span class="method-start">59547 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

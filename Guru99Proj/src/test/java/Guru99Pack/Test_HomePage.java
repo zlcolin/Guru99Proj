@@ -7,12 +7,24 @@ import org.testng.annotations.Test;
 
 public class Test_HomePage extends SupertestNG {
 	CommonFeaturesClass_TestCases objCommon;
-	//Comments has been added
-	//second commments added
+	public LoginPage objLoginPage;
+	public HomePage objHomePage;
+	public Excelclass objexcelsheet;
+	
 	@Test (priority = 1)
-	public void test_HomePage_VerifyWelcomeText(){
-		objHomePage= new HomePage(driver);
+	public void test_HomePage_VerifyWelcomeText() throws Exception{
 		System.out.println("2nd test case");
+		
+		objexcelsheet= new Excelclass("C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls","Sheet1");
+		String cel1= objexcelsheet.getRowID(1,0);
+		String cel2= objexcelsheet.getRowPass(1,1);
+		System.out.println("User Id is:" + cel1);
+		System.out.println("password is:" + cel2);
+		objLoginPage=new LoginPage(driver);
+		objLoginPage.loginToGuru99(cel1,cel2);
+		Reporter.log("User is logged in successfully", true);
+		
+		objHomePage= new HomePage(driver);
 		String HomePagetxt = objHomePage.getHomePageDashboardWelcomeText();
 		Assert.assertTrue(HomePagetxt.contains("Welcome To Manager's Page of Guru99 Bank"));
 		Reporter.log("Welcome text is:"+HomePagetxt, true);
@@ -20,8 +32,18 @@ public class Test_HomePage extends SupertestNG {
 	}
 	
 	@Test (priority = 2)
-	public void test_ClickingsidebarMenu(){
+	public void test_ClickingsidebarMenu() throws Exception{
 		System.out.println("3rd test case");
+		objexcelsheet= new Excelclass("C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls","Sheet1");
+		String cel1= objexcelsheet.getRowID(1,0);
+		String cel2= objexcelsheet.getRowPass(1,1);
+		System.out.println("User Id is:" + cel1);
+		System.out.println("password is:" + cel2);
+		
+		objLoginPage=new LoginPage(driver);
+		objLoginPage.loginToGuru99(cel1,cel2);
+		Reporter.log("User is logged in successfully", true);
+		
 		objCommon =new CommonFeaturesClass_TestCases(driver);
 		objLoginPage=new LoginPage(driver);
 		
@@ -66,10 +88,7 @@ public class Test_HomePage extends SupertestNG {
 		System.out.println("test_click_customisedStatementLink is successful");
 		objCommon.test_click_Logout();
 		System.out.println("test_click_LogoutLink is successful");
-		String ManagerIDtxt = objHomePage.getManagerIDText();
-		Assert.assertTrue(ManagerIDtxt.contains("Manger Id : mngr16258"));
-		Reporter.log("Manager's ID is:"+ManagerIDtxt, true);
-		objLoginPage.loginToGuru99("mngr16258","12345");
+		
 		
 		
 	}

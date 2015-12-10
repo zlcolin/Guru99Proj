@@ -1,5 +1,6 @@
 package Guru99Pack;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -88,6 +89,9 @@ public class BaseClass {
 		}
 		public void clickLogout(WebDriver driver){
 			driver.findElement(logout).click();
+			Alert alert=driver.switchTo().alert();
+			System.out.println("Alert Present on page: " + alert.getText());
+			alert.accept();
 		}
 		public void clickHomeLink(WebDriver driver){
 			driver.findElement(homeLink).click();

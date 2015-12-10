@@ -5,6 +5,7 @@
     <classes>
       <class name="Guru99Pack.Test_HomePage">
         <methods>
+          <include name="pretest"/>
           <include name="test_ClickingsidebarMenu"/>
           <include name="precondition"/>
           <include name="postcondition"/>

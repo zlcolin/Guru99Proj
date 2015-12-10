@@ -8,16 +8,11 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-
-
-
-
 public class SupertestNG {
 	
 	public WebDriver driver;
-	public LoginPage objLoginPage;
 	public Excelclass objexcelsheet;
-	public HomePage objHomePage;
+	
 	
 	@BeforeMethod
 	public void precondition() throws Exception {
@@ -25,18 +20,7 @@ public class SupertestNG {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://demo.guru99.com/V4/");
 		Reporter.log("Application is loaded", true);
-		
-
-		objexcelsheet= new Excelclass("C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls","Sheet1");
-		String cel1= objexcelsheet.getRowID(1,0);
-		String cel2= objexcelsheet.getRowPass(1,1);
-		
-		objLoginPage=new LoginPage(driver);
-		objLoginPage.loginToGuru99(cel1,cel2);
-		
-		Reporter.log("User is logged in successfully", true);
-		
-	}
+}
 	
 	@AfterMethod
 	public void postcondition()
