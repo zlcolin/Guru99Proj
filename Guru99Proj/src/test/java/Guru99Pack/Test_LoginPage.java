@@ -26,6 +26,7 @@ public class Test_LoginPage extends SupertestNG {
 		Assert.assertTrue(LoginPageTitle.toLowerCase().contains("guru99 bank"));
 		Reporter.log("Title of login page is:"+LoginPageTitle.toLowerCase(), true);
 		Reporter.log("User is logged in successfully and the login page is also verified", true);
+		objexcelsheet.setResult(1, 2,"Pass" );
 	} // end of test
 	
 }// end of class

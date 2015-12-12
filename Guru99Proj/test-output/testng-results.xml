@@ -17,19 +17,19 @@
       <![CDATA[Application is logged out]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24359" started-at="2015-12-12T20:17:23Z" finished-at="2015-12-12T20:17:48Z">
+  <suite name="Default suite" duration-ms="23563" started-at="2015-12-12T20:33:08Z" finished-at="2015-12-12T20:33:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24359" started-at="2015-12-12T20:17:23Z" finished-at="2015-12-12T20:17:48Z">
+    <test name="Default test" duration-ms="23563" started-at="2015-12-12T20:33:08Z" finished-at="2015-12-12T20:33:32Z">
       <class name="Guru99Pack.Test_LoginPage">
-        <test-method status="PASS" signature="precondition()[pri:0, instance:Guru99Pack.Test_LoginPage@680525]" name="precondition" is-config="true" duration-ms="20750" started-at="2015-12-13T01:47:23Z" finished-at="2015-12-13T01:47:44Z">
+        <test-method status="PASS" signature="precondition()[pri:0, instance:Guru99Pack.Test_LoginPage@51e62]" name="precondition" is-config="true" duration-ms="19828" started-at="2015-12-13T02:03:08Z" finished-at="2015-12-13T02:03:28Z">
           <reporter-output>
             <line>
               <![CDATA[Application is loaded]]>
             </line>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="test_LoginPage_VerifyLogin()[pri:0, instance:Guru99Pack.Test_LoginPage@680525]" name="test_LoginPage_VerifyLogin" duration-ms="3016" started-at="2015-12-13T01:47:44Z" finished-at="2015-12-13T01:47:47Z">
+        <test-method status="PASS" signature="test_LoginPage_VerifyLogin()[pri:0, instance:Guru99Pack.Test_LoginPage@51e62]" name="test_LoginPage_VerifyLogin" duration-ms="3187" started-at="2015-12-13T02:03:28Z" finished-at="2015-12-13T02:03:31Z">
           <reporter-output>
             <line>
               <![CDATA[User is logged in successfully]]>
@@ -42,7 +42,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- test_LoginPage_VerifyLogin -->
-        <test-method status="PASS" signature="postcondition()[pri:0, instance:Guru99Pack.Test_LoginPage@680525]" name="postcondition" is-config="true" duration-ms="562" started-at="2015-12-13T01:47:47Z" finished-at="2015-12-13T01:47:48Z">
+        <test-method status="PASS" signature="postcondition()[pri:0, instance:Guru99Pack.Test_LoginPage@51e62]" name="postcondition" is-config="true" duration-ms="532" started-at="2015-12-13T02:03:31Z" finished-at="2015-12-13T02:03:32Z">
           <reporter-output>
             <line>
               <![CDATA[Application is logged out]]>

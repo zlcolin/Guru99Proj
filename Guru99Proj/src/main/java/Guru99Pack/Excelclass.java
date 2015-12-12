@@ -1,7 +1,7 @@
 package Guru99Pack;
 
 import java.io.FileInputStream;
-
+import java.io.FileOutputStream;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -59,5 +59,21 @@ public class Excelclass {
 	}
 	return cellval2;			
 	}
+	
+	public  void setResult(int rowno,int cellno, String message ) throws Exception {
+		
+		try {
+			writerw=sh.getRow(rowno);	
+			writecell=writerw.createCell(cellno);
+			writecell.setCellType(Cell.CELL_TYPE_STRING);
+			writecell.setCellValue(message);
+			FileOutputStream fos=new FileOutputStream("C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls");
+			wb.write(fos);
+			fos.close();
+		} catch (Exception e){
+			throw (e);
+		}
+			
+		}
 	
 }
