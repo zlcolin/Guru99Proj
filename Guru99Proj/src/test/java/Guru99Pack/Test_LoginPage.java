@@ -5,6 +5,10 @@ import java.io.File;
 import java.io.FileOutputStream;
 
 import org.apache.commons.io.FileUtils;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartUtilities;
+import org.jfree.chart.JFreeChart;
+import org.jfree.data.general.DefaultPieDataset;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -55,6 +59,15 @@ public class Test_LoginPage extends SupertestNG {
 		document.add(new Paragraph("login page is also verified"));
 		document.close();
 		
+		//Creating Pie Chart
+		DefaultPieDataset pieDataset = new DefaultPieDataset();
+		 pieDataset.setValue("PASS", new Integer(65));
+		 pieDataset.setValue("FAIL", new Integer(25));
+		 pieDataset.setValue("N/A", new Integer(10));
+
+		 JFreeChart piechart = ChartFactory.createPieChart("Test Case Execution Status", pieDataset, true, true, false);
+		 ChartUtilities.saveChartAsJPEG(new File("C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\Charts\\simplePiechart.jpg"), piechart, 400, 400);
+		 
 		objexcelsheet.setResult(1, 2,"Pass" );
 	} // end of test
 	
