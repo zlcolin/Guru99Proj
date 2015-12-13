@@ -1,7 +1,11 @@
 package Guru99Pack;
 
+import java.io.File;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 //added new comment
@@ -87,7 +91,7 @@ public class BaseandCommanFeature {
 		public void clickCustomisedStatement(WebDriver driver){
 			driver.findElement(customisedStatement).click();
 		}
-		public void clickLogout(WebDriver driver){
+		public void clickLogout(WebDriver driver) throws Exception {
 			driver.findElement(logout).click();
 			Alert alert=driver.switchTo().alert();
 			System.out.println("Alert Present on page: " + alert.getText());

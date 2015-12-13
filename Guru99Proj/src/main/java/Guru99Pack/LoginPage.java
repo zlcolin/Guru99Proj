@@ -24,7 +24,7 @@ public class LoginPage {
    
  //login method
    public void loginToGuru99(String strUserName,String strPasword){
-	   BasicConfigurator.configure();
+	 //  BasicConfigurator.configure();
 	//   System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.Jdk14Logger");
 	   DOMConfigurator.configure("log4j.xml");
 	   driver.findElement(loginName).sendKeys(strUserName);

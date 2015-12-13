@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
-  <test name="Test(failed)" parallel="none">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="TestPlanWPath" value="C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls"/>
+  <parameter name="Browser1" value="Firefox"/>
+  <parameter name="Sheetname" value="Sheet1"/>
+  <test name="Test(failed)">
+    <parameter name="Browser1" value="Firefox"/>
+    <parameter name="TestPlanWPath" value="C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls"/>
+    <parameter name="Sheetname" value="Sheet1"/>
     <classes>
-      <class name="Guru99Pack.Test_HomePage">
-        <methods>
-          <include name="test_HomePage_VerifyManagersID"/>
-          <include name="test_ClickingsidebarMenu"/>
-          <include name="precondition"/>
-          <include name="postcondition"/>
-        </methods>
-      </class> <!-- Guru99Pack.Test_HomePage -->
       <class name="Guru99Pack.Test_LoginPage">
         <methods>
           <include name="precondition"/>
           <include name="postcondition"/>
         </methods>
       </class> <!-- Guru99Pack.Test_LoginPage -->
+      <class name="Guru99Pack.Test_HomePage">
+        <methods>
+          <include name="test_ClickingsidebarMenu"/>
+          <include name="precondition"/>
+          <include name="postcondition"/>
+        </methods>
+      </class> <!-- Guru99Pack.Test_HomePage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

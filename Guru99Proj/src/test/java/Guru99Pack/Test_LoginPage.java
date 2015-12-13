@@ -1,6 +1,12 @@
 package Guru99Pack;
 
 
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Parameters;
@@ -28,6 +34,8 @@ public class Test_LoginPage extends SupertestNG {
 		Assert.assertTrue(LoginPageTitle.toLowerCase().contains("guru99 bank"));
 		Reporter.log("Title of login page is:"+LoginPageTitle.toLowerCase(), true);
 		Reporter.log("User is logged in successfully and the login page is also verified", true);
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile, new File("C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\AllSnagits\\Tc1.png"));
 		objexcelsheet.setResult(1, 2,"Pass" );
 	} // end of test
 	

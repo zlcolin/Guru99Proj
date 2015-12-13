@@ -144,7 +144,7 @@ public class CommonFeaturesClass_TestCases {
 	} // end of test
 	
 	
-	public void test_click_Logout()throws InterruptedException{
+	public void test_click_Logout()throws Exception{
 		objBaseClass = new BaseandCommanFeature(driver);
 		objBaseClass.clickLogout(driver);
 
