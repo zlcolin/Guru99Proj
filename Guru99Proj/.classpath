@@ -34,5 +34,17 @@
 	<classpathentry kind="lib" path="C:/selenium_java_client_driver/selenium-2.48.2/POI/poi-bin-3.13-20150929/poi-3.13/lib/commons-codec-1.9.jar"/>
 	<classpathentry kind="lib" path="C:/selenium_java_client_driver/selenium-2.48.2/POI/poi-bin-3.13-20150929/poi-3.13/lib/junit-4.12.jar"/>
 	<classpathentry kind="lib" path="C:/selenium_java_client_driver/selenium-2.48.2/POI/poi-bin-3.13-20150929/poi-3.13/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/PDF_JAR/itext-5.5.8/itext-pdfa-5.5.8.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/PDF_JAR/itext-5.5.8/itext-pdfa-5.5.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/PDF_JAR/itext-5.5.8/itext-pdfa-5.5.8-sources.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/PDF_JAR/itext-5.5.8/itext-xtra-5.5.8.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/PDF_JAR/itext-5.5.8/itext-xtra-5.5.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/PDF_JAR/itext-5.5.8/itext-xtra-5.5.8-sources.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/PDF_JAR/itext-5.5.8/xmlworker-5.5.8.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/PDF_JAR/itext-5.5.8/xmlworker-5.5.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/PDF_JAR/itext-5.5.8/xmlworker-5.5.8-sources.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/PDF_JAR/itext-5.5.8/itextpdf-5.5.8.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/PDF_JAR/itext-5.5.8/itextpdf-5.5.8-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/PDF_JAR/itext-5.5.8/itextpdf-5.5.8-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
