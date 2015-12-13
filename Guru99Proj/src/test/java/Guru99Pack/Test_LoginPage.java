@@ -3,6 +3,7 @@ package Guru99Pack;
 
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Test_LoginPage extends SupertestNG {
@@ -12,9 +13,10 @@ public class Test_LoginPage extends SupertestNG {
 	public Excelclass objexcelsheet;
 	
 	@Test (priority = 0)
-	public void test_LoginPage_VerifyLogin() throws Exception{
+	@Parameters( { "TestPlanWPath" ,"Sheetname"})
+		public void test_LoginPage_VerifyLogin(String TestPlanWPath, String Sheetname) throws Exception{
 		System.out.println("1st test case");
-		objexcelsheet= new Excelclass("C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls","Sheet1");
+		objexcelsheet= new Excelclass(TestPlanWPath,Sheetname);
 		String cel1= objexcelsheet.getRowID(1,0);
 		String cel2= objexcelsheet.getRowPass(1,1);
 		System.out.println("User Id is:" + cel1);

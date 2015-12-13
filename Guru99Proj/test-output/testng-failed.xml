@@ -3,14 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Guru99Pack.Test_HomePage">
+      <class name="Guru99Pack.Test_LoginPage">
         <methods>
-          <include name="pretest"/>
-          <include name="test_ClickingsidebarMenu"/>
-          <include name="precondition"/>
-          <include name="postcondition"/>
+          <include name="test_LoginPage_VerifyLogin"/>
         </methods>
-      </class> <!-- Guru99Pack.Test_HomePage -->
+      </class> <!-- Guru99Pack.Test_LoginPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
