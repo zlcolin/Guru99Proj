@@ -7,6 +7,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 public class SupertestNG {
 	
@@ -15,7 +17,9 @@ public class SupertestNG {
 	
 	
 	@BeforeMethod
-	public void precondition() throws Exception {
+	@Parameters( { "Browser1" } )
+	public void precondition(@Optional String Browser1) throws Exception {
+		System.out.println("Browser executing is : " + Browser1);
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://demo.guru99.com/V4/");

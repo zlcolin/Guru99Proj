@@ -4,6 +4,7 @@
   <test name="Test">
   <parameter name="TestPlanWPath" value="C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls"/> 
   <parameter name="Sheetname" value="Sheet1"/>
+  <parameter name="Browser1" value="Firefox"/>
     <classes>
     
      <class name="Guru99Pack.Test_LoginPage"/>

@@ -1,5 +1,6 @@
 package Guru99Pack;
 
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
@@ -23,6 +24,8 @@ public class LoginPage {
    
  //login method
    public void loginToGuru99(String strUserName,String strPasword){
+	   BasicConfigurator.configure();
+	//   System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.Jdk14Logger");
 	   DOMConfigurator.configure("log4j.xml");
 	   driver.findElement(loginName).sendKeys(strUserName);
 	   driver.findElement(loginPassword).sendKeys(strPasword);
