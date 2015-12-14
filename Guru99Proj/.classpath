@@ -58,5 +58,11 @@
 	<classpathentry kind="lib" path="C:/selenium_java_client_driver/chart jar/jfreechart-1.0.19/jfreechart-1.0.19/lib/orsonpdf-1.6-eval.jar"/>
 	<classpathentry kind="lib" path="C:/selenium_java_client_driver/chart jar/jfreechart-1.0.19/jfreechart-1.0.19/lib/servlet.jar"/>
 	<classpathentry kind="lib" path="C:/selenium_java_client_driver/chart jar/jfreechart-1.0.19/jfreechart-1.0.19/lib/swtgraphics2d.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/mail/smtp-maven-plugin-0.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/mail/smtp-1.4.5.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/mail/javamail-1.4.3.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/mail/mail-5.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/mail/pop3-1.5.0.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/javax.activation-1.1.0.v201105071233.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
