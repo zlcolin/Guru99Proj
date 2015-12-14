@@ -77,12 +77,12 @@
       <![CDATA[Application is logged out]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="105640" started-at="2015-12-14T11:59:16Z" finished-at="2015-12-14T12:01:01Z">
+  <suite name="Suite" duration-ms="77828" started-at="2015-12-14T13:13:48Z" finished-at="2015-12-14T13:15:06Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="105640" started-at="2015-12-14T11:59:16Z" finished-at="2015-12-14T12:01:01Z">
+    <test name="Test" duration-ms="77828" started-at="2015-12-14T13:13:48Z" finished-at="2015-12-14T13:15:06Z">
       <class name="Guru99Pack.Test_HomePage">
-        <test-method status="PASS" signature="precondition(java.lang.String)[pri:0, instance:Guru99Pack.Test_HomePage@a3cf3e]" name="precondition" is-config="true" duration-ms="18062" started-at="2015-12-14T17:29:54Z" finished-at="2015-12-14T17:30:12Z">
+        <test-method status="PASS" signature="precondition(java.lang.String)[pri:0, instance:Guru99Pack.Test_HomePage@13a6057]" name="precondition" is-config="true" duration-ms="9937" started-at="2015-12-14T18:44:12Z" finished-at="2015-12-14T18:44:22Z">
           <params>
             <param index="0">
               <value>
@@ -96,7 +96,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="test_HomePage_VerifyWelcomeText()[pri:1, instance:Guru99Pack.Test_HomePage@a3cf3e]" name="test_HomePage_VerifyWelcomeText" duration-ms="2406" started-at="2015-12-14T17:30:12Z" finished-at="2015-12-14T17:30:14Z">
+        <test-method status="PASS" signature="test_HomePage_VerifyWelcomeText()[pri:1, instance:Guru99Pack.Test_HomePage@13a6057]" name="test_HomePage_VerifyWelcomeText" duration-ms="4766" started-at="2015-12-14T18:44:22Z" finished-at="2015-12-14T18:44:27Z">
           <reporter-output>
             <line>
               <![CDATA[User is logged in successfully]]>
@@ -106,14 +106,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- test_HomePage_VerifyWelcomeText -->
-        <test-method status="PASS" signature="postcondition()[pri:0, instance:Guru99Pack.Test_HomePage@a3cf3e]" name="postcondition" is-config="true" duration-ms="453" started-at="2015-12-14T17:30:14Z" finished-at="2015-12-14T17:30:15Z">
+        <test-method status="PASS" signature="postcondition()[pri:0, instance:Guru99Pack.Test_HomePage@13a6057]" name="postcondition" is-config="true" duration-ms="312" started-at="2015-12-14T18:44:27Z" finished-at="2015-12-14T18:44:27Z">
           <reporter-output>
             <line>
               <![CDATA[Application is logged out]]>
             </line>
           </reporter-output>
         </test-method> <!-- postcondition -->
-        <test-method status="PASS" signature="precondition(java.lang.String)[pri:0, instance:Guru99Pack.Test_HomePage@a3cf3e]" name="precondition" is-config="true" duration-ms="21297" started-at="2015-12-14T17:30:15Z" finished-at="2015-12-14T17:30:36Z">
+        <test-method status="PASS" signature="precondition(java.lang.String)[pri:0, instance:Guru99Pack.Test_HomePage@13a6057]" name="precondition" is-config="true" duration-ms="10625" started-at="2015-12-14T18:44:27Z" finished-at="2015-12-14T18:44:38Z">
           <params>
             <param index="0">
               <value>
@@ -127,7 +127,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="test_ClickingsidebarMenu()[pri:2, instance:Guru99Pack.Test_HomePage@a3cf3e]" name="test_ClickingsidebarMenu" duration-ms="25110" started-at="2015-12-14T17:30:36Z" finished-at="2015-12-14T17:31:01Z">
+        <test-method status="PASS" signature="test_ClickingsidebarMenu()[pri:2, instance:Guru99Pack.Test_HomePage@13a6057]" name="test_ClickingsidebarMenu" duration-ms="28266" started-at="2015-12-14T18:44:38Z" finished-at="2015-12-14T18:45:06Z">
           <reporter-output>
             <line>
               <![CDATA[User is logged in successfully]]>
@@ -173,7 +173,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- test_ClickingsidebarMenu -->
-        <test-method status="PASS" signature="postcondition()[pri:0, instance:Guru99Pack.Test_HomePage@a3cf3e]" name="postcondition" is-config="true" duration-ms="390" started-at="2015-12-14T17:31:01Z" finished-at="2015-12-14T17:31:01Z">
+        <test-method status="PASS" signature="postcondition()[pri:0, instance:Guru99Pack.Test_HomePage@13a6057]" name="postcondition" is-config="true" duration-ms="390" started-at="2015-12-14T18:45:06Z" finished-at="2015-12-14T18:45:06Z">
           <reporter-output>
             <line>
               <![CDATA[Application is logged out]]>
@@ -182,7 +182,7 @@
         </test-method> <!-- postcondition -->
       </class> <!-- Guru99Pack.Test_HomePage -->
       <class name="Guru99Pack.Test_LoginPage">
-        <test-method status="PASS" signature="precondition(java.lang.String)[pri:0, instance:Guru99Pack.Test_LoginPage@f7bd29]" name="precondition" is-config="true" duration-ms="27359" started-at="2015-12-14T17:29:16Z" finished-at="2015-12-14T17:29:43Z">
+        <test-method status="PASS" signature="precondition(java.lang.String)[pri:0, instance:Guru99Pack.Test_LoginPage@bd133e]" name="precondition" is-config="true" duration-ms="18687" started-at="2015-12-14T18:43:49Z" finished-at="2015-12-14T18:44:07Z">
           <params>
             <param index="0">
               <value>
@@ -196,7 +196,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="test_LoginPage_VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:Guru99Pack.Test_LoginPage@f7bd29]" name="test_LoginPage_VerifyLogin" duration-ms="7813" started-at="2015-12-14T17:29:43Z" finished-at="2015-12-14T17:29:51Z">
+        <test-method status="PASS" signature="test_LoginPage_VerifyLogin(java.lang.String, java.lang.String)[pri:0, instance:Guru99Pack.Test_LoginPage@bd133e]" name="test_LoginPage_VerifyLogin" duration-ms="4125" started-at="2015-12-14T18:44:07Z" finished-at="2015-12-14T18:44:11Z">
           <params>
             <param index="0">
               <value>
@@ -221,14 +221,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- test_LoginPage_VerifyLogin -->
-        <test-method status="PASS" signature="postcondition()[pri:0, instance:Guru99Pack.Test_LoginPage@f7bd29]" name="postcondition" is-config="true" duration-ms="2672" started-at="2015-12-14T17:29:51Z" finished-at="2015-12-14T17:29:54Z">
+        <test-method status="PASS" signature="postcondition()[pri:0, instance:Guru99Pack.Test_LoginPage@bd133e]" name="postcondition" is-config="true" duration-ms="656" started-at="2015-12-14T18:44:11Z" finished-at="2015-12-14T18:44:12Z">
           <reporter-output>
             <line>
               <![CDATA[Application is logged out]]>
             </line>
           </reporter-output>
         </test-method> <!-- postcondition -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Guru99Pack.Test_LoginPage@f7bd29]" name="tearDown" is-config="true" duration-ms="6250" started-at="2015-12-14T17:31:01Z" finished-at="2015-12-14T17:31:08Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Guru99Pack.Test_LoginPage@bd133e]" name="tearDown" is-config="true" duration-ms="5766" started-at="2015-12-14T18:45:06Z" finished-at="2015-12-14T18:45:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
