@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -106,7 +106,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Guru99Pack.Test_HomePage" hash-for-method="test_ClickingsidebarMenu">test_ClickingsidebarMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Guru99Pack.Test_HomePage" hash-for-method="test_HomePage_VerifyWelcomeText">test_HomePage_VerifyWelcomeText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Guru99Pack.Test_HomePage" hash-for-method="test_HomePage_VerifyWelcomeText">test_HomePage_VerifyWelcomeText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Guru99Pack.Test_LoginPage" hash-for-method="test_LoginPage_VerifyLogin(C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls, Sheet1)">test_LoginPage_VerifyLogin(C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls, Sheet1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -141,6 +156,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="test_ClickingsidebarMenu">
+                  </a> <!-- test_ClickingsidebarMenu -->
+                  <span class="method-name">test_ClickingsidebarMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_HomePage_VerifyWelcomeText">
+                  </a> <!-- test_HomePage_VerifyWelcomeText -->
+                  <span class="method-name">test_HomePage_VerifyWelcomeText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="test_HomePage_VerifyWelcomeText">
                   </a> <!-- test_HomePage_VerifyWelcomeText -->
                   <span class="method-name">test_HomePage_VerifyWelcomeText</span>
@@ -162,6 +191,14 @@
                   <span class="parameters">(C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls, Sheet1)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_LoginPage_VerifyLogin(C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls, Sheet1)">
+                  </a> <!-- test_LoginPage_VerifyLogin(C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls, Sheet1) -->
+                  <span class="method-name">test_LoginPage_VerifyLogin</span>
+                  <span class="parameters">(C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls, Sheet1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
@@ -173,16 +210,25 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;Browser1&quot; value=&quot;Firefox&quot;/&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test name=&quot;FirefoxTest&quot;&gt;
+    &lt;parameter name=&quot;Browser1&quot; value=&quot;firefox&quot;/&gt;
     &lt;parameter name=&quot;TestPlanWPath&quot; value=&quot;C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls&quot;/&gt;
     &lt;parameter name=&quot;Sheetname&quot; value=&quot;Sheet1&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Guru99Pack.Test_LoginPage&quot;/&gt;
       &lt;class name=&quot;Guru99Pack.Test_HomePage&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
+  &lt;test name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;Browser1&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;TestPlanWPath&quot; value=&quot;C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls&quot;/&gt;
+    &lt;parameter name=&quot;Sheetname&quot; value=&quot;Sheet1&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Guru99Pack.Test_LoginPage&quot;/&gt;
+      &lt;class name=&quot;Guru99Pack.Test_HomePage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,7 +240,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">FirefoxTest (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">ChromeTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,24 +269,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test_ClickingsidebarMenu')
 data.setCell(0, 2, 'Guru99Pack.Test_HomePage')
-data.setCell(0, 3, 28266);
+data.setCell(0, 3, 31231);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test_HomePage_VerifyWelcomeText')
+data.setCell(1, 1, 'test_ClickingsidebarMenu')
 data.setCell(1, 2, 'Guru99Pack.Test_HomePage')
-data.setCell(1, 3, 4766);
+data.setCell(1, 3, 29966);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test_LoginPage_VerifyLogin')
 data.setCell(2, 2, 'Guru99Pack.Test_LoginPage')
-data.setCell(2, 3, 4125);
+data.setCell(2, 3, 10577);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_LoginPage_VerifyLogin')
+data.setCell(3, 2, 'Guru99Pack.Test_LoginPage')
+data.setCell(3, 3, 4281);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test_HomePage_VerifyWelcomeText')
+data.setCell(4, 2, 'Guru99Pack.Test_HomePage')
+data.setCell(4, 3, 3343);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test_HomePage_VerifyWelcomeText')
+data.setCell(5, 2, 'Guru99Pack.Test_HomePage')
+data.setCell(5, 3, 2781);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -249,11 +310,10 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">test_LoginPage_VerifyLogin(C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls, Sheet1)</span>
+              <span class="reporter-method-name">test_HomePage_VerifyWelcomeText</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">User is logged in successfully</span>
-                <span class="reporter-method-output">Title of login page is:guru99 bank</span>
-                <span class="reporter-method-output">User is logged in successfully and the login page is also verified</span>
+                <span class="reporter-method-output">Welcome text is:Welcome To Manager's Page of Guru99 Bank</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -276,22 +336,59 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
+              <span class="reporter-method-name">test_LoginPage_VerifyLogin(C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls, Sheet1)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">User is logged in successfully</span>
+                <span class="reporter-method-output">Title of login page is:guru99 bank</span>
+                <span class="reporter-method-output">User is logged in successfully and the login page is also verified</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">test_HomePage_VerifyWelcomeText</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">User is logged in successfully</span>
                 <span class="reporter-method-output">Welcome text is:Welcome To Manager's Page of Guru99 Bank</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test_ClickingsidebarMenu</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">User is logged in successfully</span>
+                <span class="reporter-method-output">User is navigated to New Customer Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Edit Customer Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Delete Customer Page successfully</span>
+                <span class="reporter-method-output">User is navigated to New Account Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Edit Account Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Delete Account Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Deposit Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Withdrawal Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Fund Transfer Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Change password Page successfully</span>
+                <span class="reporter-method-output">User is navigated Balance Enqiry Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Mini Statement Page successfully</span>
+                <span class="reporter-method-output">User is navigated to Customised Statement Page successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">test_LoginPage_VerifyLogin(C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls, Sheet1)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">User is logged in successfully</span>
+                <span class="reporter-method-output">Title of login page is:guru99 bank</span>
+                <span class="reporter-method-output">User is logged in successfully and the login page is also verified</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">Guru99Pack.Test_HomePage</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -306,50 +403,98 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Guru99Pack.Test_LoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">precondition(Firefox)</span>
+                <span class="method-name">precondition(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">precondition(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_LoginPage_VerifyLogin(C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls, Sheet1)</span>
-                <span class="method-start">18687 ms</span>
+                <span class="method-start">9109 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postcondition</span>
-                <span class="method-start">22812 ms</span>
+                <span class="method-start">19686 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Guru99Pack.Test_HomePage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">precondition(Firefox)</span>
-                <span class="method-start">23484 ms</span>
+                <span class="method-name">precondition(chrome)</span>
+                <span class="method-start">22076 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Guru99Pack.Test_LoginPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_LoginPage_VerifyLogin(C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls, Sheet1)</span>
+                <span class="method-start">28575 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Guru99Pack.Test_HomePage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">test_HomePage_VerifyWelcomeText</span>
-                <span class="method-start">33421 ms</span>
+                <span class="method-start">28669 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postcondition</span>
-                <span class="method-start">38203 ms</span>
+                <span class="method-start">31466 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Guru99Pack.Test_LoginPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">postcondition</span>
+                <span class="method-start">32872 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Guru99Pack.Test_HomePage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">precondition(Firefox)</span>
-                <span class="method-start">38515 ms</span>
+                <span class="method-name">precondition(chrome)</span>
+                <span class="method-start">33106 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">precondition(firefox)</span>
+                <span class="method-start">33356 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test_ClickingsidebarMenu</span>
-                <span class="method-start">49140 ms</span>
+                <span class="method-start">40090 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_HomePage_VerifyWelcomeText</span>
+                <span class="method-start">60963 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postcondition</span>
-                <span class="method-start">77406 ms</span>
+                <span class="method-start">64306 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">precondition(firefox)</span>
+                <span class="method-start">65072 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">postcondition</span>
+                <span class="method-start">70056 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">test_ClickingsidebarMenu</span>
+                <span class="method-start">80414 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postcondition</span>
+                <span class="method-start">111645 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Guru99Pack.Test_LoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">77812 ms</span>
+                <span class="method-start">112098 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

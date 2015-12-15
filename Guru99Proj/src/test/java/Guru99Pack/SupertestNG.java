@@ -34,6 +34,7 @@ import javax.mail.internet.MimeMultipart;
  
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -51,9 +52,17 @@ public class SupertestNG {
 	@BeforeMethod
 	@Parameters( { "Browser1" } )
 	public void precondition(@Optional String Browser1) throws Exception {
-		System.out.println("Browser executing is : " + Browser1);
-		driver = new FirefoxDriver();
+		if(Browser1.equalsIgnoreCase("firefox")){
+			driver = new FirefoxDriver();
+		    System.out.println("Browser executing is : " + Browser1);
+			}
+		else if(Browser1.equalsIgnoreCase("chrome")){
+			System.setProperty("webdriver.chrome.driver","C:\\selenium_java_client_driver\\chromedriver.exe");
+			driver = new ChromeDriver();
+			System.out.println("Browser executing is : " + Browser1);
+		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		driver.get("http://demo.guru99.com/V4/");
 		Reporter.log("Application is loaded", true);
 }

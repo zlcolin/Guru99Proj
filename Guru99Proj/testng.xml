@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" >
-  <test name="Test">
+<suite name="Suite" thread-count="2" parallel="tests" >
+  <test name="FirefoxTest">
   <parameter name="TestPlanWPath" value="C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls"/> 
   <parameter name="Sheetname" value="Sheet1"/>
-  <parameter name="Browser1" value="Firefox"/>
+  <parameter name="Browser1" value="firefox"/>
+    <classes>
+    
+     <class name="Guru99Pack.Test_LoginPage"/>  
+	<class name="Guru99Pack.Test_HomePage"/> 
+    </classes>
+  </test> <!-- Test -->
+  <test name="ChromeTest">
+  <parameter name="TestPlanWPath" value="C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls"/> 
+  <parameter name="Sheetname" value="Sheet1"/>
+  <parameter name="Browser1" value="chrome"/>
     <classes>
     
      <class name="Guru99Pack.Test_LoginPage"/>
-      <class name="Guru99Pack.Test_HomePage"/>
-      
-      
+      <class name="Guru99Pack.Test_HomePage"/> 
     </classes>
   </test> <!-- Test -->
+  
+  
 </suite> <!-- Suite -->
+
