@@ -64,5 +64,6 @@
 	<classpathentry kind="lib" path="C:/selenium_java_client_driver/mail/mail-5.1.0.jar"/>
 	<classpathentry kind="lib" path="C:/selenium_java_client_driver/mail/pop3-1.5.0.jar"/>
 	<classpathentry kind="lib" path="C:/selenium_java_client_driver/javax.activation-1.1.0.v201105071233.jar"/>
+	<classpathentry kind="lib" path="C:/selenium_java_client_driver/maven-surefire-plugin-2.19.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
