@@ -17,7 +17,7 @@ public class LoginPage {
    By titleText =By.className("barone");
    By loginbtn = By.name("btnLogin");
    
-   //constructornmnmn
+   //constructor
    public LoginPage(WebDriver driver){
 	   this.driver = driver;
        }
