@@ -3,6 +3,10 @@ package Guru99Pack;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
 
 import org.apache.commons.io.FileUtils;
 import org.jfree.chart.ChartFactory;
@@ -20,6 +24,7 @@ import org.testng.annotations.Test;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
+
 
 public class Test_LoginPage extends SupertestNG {
 	
@@ -69,6 +74,32 @@ public class Test_LoginPage extends SupertestNG {
 		 ChartUtilities.saveChartAsJPEG(new File("C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\Charts\\simplePiechart.jpg"), piechart, 400, 400);
 		 
 		objexcelsheet.setResult(1, 2,"Pass" );
-	} // end of test
-	
+		System.out.println ("Will start connecting with SQL server ");
+		
+		//Loading the required JDBC Driver class
+		System.out.println ("Loading the required JDBC Driver class ");
+		String dbclass="com.mysql.jdbc.Driver";
+		Class.forName(dbclass).newInstance();	
+		
+
+		//Creating a connection to the database Connection 
+		System.out.println ("Creating a connection to the database Connection ");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/bugs","root",""); 
+		
+		
+		//Creating statement object for the queries
+		Statement st = conn.createStatement(); 
+		System.out.println ("Creating statement object for the queries ");
+		
+		//Executing SQL query and fetching the result 
+		ResultSet rs = st.executeQuery("select * from bugs_fulltext"); 
+		System.out.println ("Executing SQL query and fetching the result  ");
+		System.out.println ("loop fo SQL");
+		while (rs.next()) 
+		{ System.out.println(rs.getString("short_desc")); 
+		
+		} 
+		System.out.println ("loop for SQL ended  ");
+		
+	}
 }// end of class

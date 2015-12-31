@@ -6,6 +6,7 @@
       <class name="Guru99Pack.Test_LoginPage">
         <methods>
           <include name="test_LoginPage_VerifyLogin"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- Guru99Pack.Test_LoginPage -->
     </classes>
