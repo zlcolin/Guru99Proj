@@ -9,6 +9,8 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import testlink.api.java.client.TestLinkAPIResults;
+
 
 public class Test_HomePage extends SupertestNG {
 	CommonFeaturesClass_TestCases objCommon;
@@ -39,6 +41,18 @@ public class Test_HomePage extends SupertestNG {
 	
 	@Test (priority = 2)
 	public void test_ClickingsidebarMenu() throws Exception {
+		
+		//Updating tc4 of testlink1 project
+		
+		UpdateTestlink a=new UpdateTestlink();
+		String testProject="Guru99Proj";
+		String testPlan="Iteration1";
+		String testCase="0281-4";
+		String build="Iteration1Build1";
+		String notes= null;
+		String result=null;
+		
+		try {
 		System.out.println("3rd test case");
 		objexcelsheet= new Excelclass("C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls","Sheet1");
 		String cel1= objexcelsheet.getRowID(1,0);
@@ -136,6 +150,20 @@ public class Test_HomePage extends SupertestNG {
 		FileUtils.copyFile(scrFile14, new File("C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\AllSnagits\\Tc3_14.png"));
 		System.out.println("test_click_LogoutLink is successful");
 		
+			//IF no exception the we will update the test link with pass status.
+				result= TestLinkAPIResults.TEST_PASSED;
+				notes="Executed successfully";
+				a.reportResult(testProject, testPlan, testCase, build, notes, result);
+				}
+				
+			//If the exception occurs update the test link with fail status
+				catch(Exception e){
+					result=TestLinkAPIResults.TEST_FAILED;
+					notes="Execution failed";
+					}
+					finally{
+					a.reportResult(testProject, testPlan, testCase, build, notes, result);
+				}
 		
 		
 	}

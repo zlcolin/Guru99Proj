@@ -25,6 +25,8 @@ import com.itextpdf.text.Document;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
 
+import testlink.api.java.client.TestLinkAPIResults;
+
 
 public class Test_LoginPage extends SupertestNG {
 	
@@ -35,6 +37,15 @@ public class Test_LoginPage extends SupertestNG {
 	@Test (priority = 0)
 	@Parameters( { "TestPlanWPath" ,"Sheetname"})
 		public void test_LoginPage_VerifyLogin(String TestPlanWPath, String Sheetname) throws Exception{
+		//Updating tc3 of testlink1 project
+				UpdateTestlink a=new UpdateTestlink();
+				String testProject="Guru99Proj";
+				String testPlan="Iteration1";
+				String testCase="0281-3";
+				String build="Iteration1Build1";
+				String notes= null;
+				String result=null;
+		try {		
 		System.out.println("1st test case");
 		objexcelsheet= new Excelclass(TestPlanWPath,Sheetname);
 		String cel1= objexcelsheet.getRowID(1,0);
@@ -49,6 +60,21 @@ public class Test_LoginPage extends SupertestNG {
 		Reporter.log("Title of login page is:"+LoginPageTitle.toLowerCase(), true);
 		Reporter.log("User is logged in successfully and the login page is also verified", true);
 		
+		
+		//IF no exception the we will update the test link.
+		result= TestLinkAPIResults.TEST_PASSED;
+		notes="Executed successfully";
+		a.reportResult(testProject, testPlan, testCase, build, notes, result);
+		}
+		
+		//If the exception occurs
+		catch(Exception e){
+			result=TestLinkAPIResults.TEST_FAILED;
+			notes="Execution failed";
+			}
+			finally{
+			a.reportResult(testProject, testPlan, testCase, build, notes, result);
+		}
 		//Screenshots
 		
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

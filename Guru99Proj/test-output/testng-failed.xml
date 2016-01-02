@@ -4,31 +4,6 @@
   <parameter name="TestPlanWPath" value="C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls"/>
   <parameter name="Browser1" value="chrome"/>
   <parameter name="Sheetname" value="Sheet1"/>
-  <test name="ChromeTest(failed)" parallel="tests">
-    <parameter name="Browser1" value="chrome"/>
-    <parameter name="TestPlanWPath" value="C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls"/>
-    <parameter name="Sheetname" value="Sheet1"/>
-    <classes>
-      <class name="Guru99Pack.Test_HomePage">
-        <methods>
-          <include name="precondition"/>
-          <include name="precondition"/>
-          <include name="postcondition"/>
-          <include name="postcondition"/>
-        </methods>
-      </class> <!-- Guru99Pack.Test_HomePage -->
-      <class name="Guru99Pack.Test_LoginPage">
-        <methods>
-          <include name="test_LoginPage_VerifyLogin" invocation-numbers="0"/>
-          <include name="tearDown"/>
-          <include name="precondition"/>
-          <include name="precondition"/>
-          <include name="postcondition"/>
-          <include name="postcondition"/>
-        </methods>
-      </class> <!-- Guru99Pack.Test_LoginPage -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
   <test name="FirefoxTest(failed)" parallel="tests">
     <parameter name="Browser1" value="firefox"/>
     <parameter name="TestPlanWPath" value="C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls"/>
@@ -36,9 +11,33 @@
     <classes>
       <class name="Guru99Pack.Test_HomePage">
         <methods>
+          <include name="test_ClickingsidebarMenu"/>
+          <include name="precondition"/>
+          <include name="test_HomePage_VerifyWelcomeText"/>
+          <include name="postcondition"/>
+        </methods>
+      </class> <!-- Guru99Pack.Test_HomePage -->
+      <class name="Guru99Pack.Test_LoginPage">
+        <methods>
+          <include name="test_LoginPage_VerifyLogin"/>
+          <include name="tearDown"/>
           <include name="precondition"/>
           <include name="precondition"/>
           <include name="postcondition"/>
+        </methods>
+      </class> <!-- Guru99Pack.Test_LoginPage -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="Browser1" value="chrome"/>
+    <parameter name="TestPlanWPath" value="C:\\Documents and Settings\\Pooja T\\git\\Guru99Proj\\Guru99Proj\\TestData.xls"/>
+    <parameter name="Sheetname" value="Sheet1"/>
+    <classes>
+      <class name="Guru99Pack.Test_HomePage">
+        <methods>
+          <include name="test_ClickingsidebarMenu"/>
+          <include name="precondition"/>
+          <include name="test_HomePage_VerifyWelcomeText"/>
           <include name="postcondition"/>
         </methods>
       </class> <!-- Guru99Pack.Test_HomePage -->
@@ -49,9 +48,8 @@
           <include name="precondition"/>
           <include name="precondition"/>
           <include name="postcondition"/>
-          <include name="postcondition"/>
         </methods>
       </class> <!-- Guru99Pack.Test_LoginPage -->
     </classes>
-  </test> <!-- FirefoxTest(failed) -->
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
