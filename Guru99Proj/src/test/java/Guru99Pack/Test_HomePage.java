@@ -29,7 +29,7 @@ public class Test_HomePage extends SupertestNG {
 		System.out.println("password is:" + cel2);
 		objLoginPage=new LoginPage(driver);
 		objLoginPage.loginToGuru99(cel1,cel2);
-			
+		//made the change in script	
 		objHomePage= new HomePage(driver);
 		String HomePagetxt = objHomePage.getHomePageDashboardWelcomeText();
 		Assert.assertTrue(HomePagetxt.contains("Welcome To Manager's Page of Guru99 Bank"));
